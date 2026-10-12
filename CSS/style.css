@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav .motNav{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+}
+nav .motNav li a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration:none;
+    margin-right: 20px;
+    
+}
+.inscributton {
+    background-color: #C2410C;
+    color: white;
+    border: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 5px;     
+    margin-right: 38px;
+}
+.youcodeLogo{
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.eventNav {
+    color: #C2410C;
+    text-decoration: none;
+    position: relative;
+}
+
+.eventNav span {
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    width: 95%;
+    height: 2px;
+    background-color: #C2410C;
+}
+.Titre-page {
+    padding: 35px;
+    background-color: #FFEDD5 ;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+}
+.descriptionevent{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+    color: #57534E;
+    
+}
+.Liste-event{
+    background-color:white;
+    padding: 50px 0px;
+}
+.venirheading{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 110px;
+}
+.sixevents{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 110px;
+    color: #57534E;
+}
