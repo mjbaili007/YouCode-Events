@@ -1,19 +1,31 @@
+* {
+  box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
 }
-nav .motNav{
+/* ////////////////////////////////////NAVBAR/////////////////////////////////////////////// */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.hamburger{
+    display: none;
+}
+.navbar ul{
     margin: 10px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
     background-color: white;
-    padding: 10px;
+    padding: 5px 10px;
     align-items: center;
 }
-nav .motNav li a {
+ul li a {
     color: black;
-    padding: 5px 10px;
+    padding: 5px 20px;
     text-decoration:none;
     margin-right: 20px;
     
@@ -29,11 +41,9 @@ nav .motNav li a {
     border-radius: 5px;     
     margin-right: 38px;
 }
-.youcodeLogo{
-    margin-left: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.photoyoucode{
+    padding-left: 115px;
+    object-fit:contain;
 }
 .eventNav {
     color: #C2410C;
@@ -43,12 +53,13 @@ nav .motNav li a {
 
 .eventNav span {
     position: absolute;
-    left: 0px;
-    bottom: -8px;
-    width: 95%;
+    left: 5px;
+    bottom: -5px;
+    width: 90%;
     height: 2px;
     background-color: #C2410C;
 }
+/* /////////////////////////////////MAIN///////////////////////////////////////////////// */
 .Titre-page {
     padding: 35px;
     background-color: #FFEDD5 ;
@@ -80,406 +91,102 @@ h1{
 }
 
 
-/* ///////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////CARTES EVENEMENT//////////////////////////////////////////////// */
 .parent{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-width: 1250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    max-width: 86%;
     margin: 0 auto;
 }
 
-.eventspreview{
-    width: 382px;
+.event-card{
     box-sizing: border-box;
-    border: solid #E7E5E4 3px;
+    border: solid #E7E5E4 1px;
     border-radius: 13px;
     box-shadow: 5px 10px 18px rgb(0,0,0,0.15);
 }
-.first-img{
+.card-image{
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius:10px ;
+    border-radius:12px ;
     
 }
-.likebutton{
+.text-card{
+    font-weight: lighter;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 13px;
+    white-space: wrap;
+    width: fit-content;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+
+.card-heading{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    font-size: 15px;
+}
+i{
+    color: #57534E;
+    margin-left: 20px;
+    padding-right: 2px;
+}
+.card-date{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #57534E;
+}
+.card-location{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #57534E;
+}
+.card-details{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #C2410C;
+    font-size: 15px;
+    font-weight: bold;
+}
+.card-details i {
+    color: #C2410C;
+    position: relative;
+    right: 15px;
+}
+.atelier-color{
     background-color:#FFEDD5;
     color: #9A3412;
-    font-weight: lighter;
-    font-family:Arial, Helvetica, sans-serif;
-    border-radius: 13px;
-    width: fit-content;
-    margin-left: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    
 }
-.headone{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-    font-size: 21px;
-}
-i{
-    color: #57534E;
-    margin-left: 20px;
-    padding-right: 2px;
-}
-.dateprev{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57534E;
-}
-.locationprev{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57534E;
-}
-.detailprev{
-    margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #C2410C;
-    size: 14px;
-    font-weight: bold;
-}
-.detailprev i {
-    color: #C2410C;
-}
-
-/* ///////////////////////////////////////////////////////////////////////////////////////// */
-
-.eventspreviewII{
-    width: 382px;
-    box-sizing: border-box;
-    border: solid #E7E5E4 3px;
-    border-radius: 13px;
-    box-shadow: 5px 10px 18px rgb(0,0,0,0.15);
-}
-.sec-img{
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius:10px ;
-}
-.likebuttonII{
+.conference-color{
     background-color:#CCFBF1;
     color: #0F766E;
-    font-weight: lighter;
-    font-family:Arial, Helvetica, sans-serif;
-    border-radius: 13px;
-    width: fit-content;
-    margin-left: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    
 }
-.headtwo{
-    display: inline-block;
-    width: 80%;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-    font-size: 21px;
-}
-
-i{
-    color: #57534E;
-    margin-left: 20px;
-    padding-right: 2px;
-}
-.dateprevII{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57534E;
-}
-.locationprevII{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57534E;
-}
-.detailprevII{
-    margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #C2410C;
-    size: 14px;
-    font-weight: bold;
-}
-.detailprev i {
-    color: #C2410C;
-}
-
-
-
-
-/* ///////////////////////////////////////////////////////////////////////////////////////// */
-
-.eventspreviewIII{
-    width: 382px;
-    box-sizing: border-box;
-    border: solid #E7E5E4 3px;
-    border-radius: 13px;
-    box-shadow: 5px 10px 18px rgb(0,0,0,0.15);
-}
-.third-img{
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius:10px ;
-}
-.likebuttonIII{
+.hackathon-color{
     background-color:#FFEDD5;
     color: #9A3412;
-    font-weight: lighter;
-    font-family:Arial, Helvetica, sans-serif;
-    border-radius: 13px;
-    width: fit-content;
-    margin-left: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    
 }
-.headthree{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-    font-size: 21px;
-}
-i{
-    color: #57534E;
-    margin-left: 20px;
-    padding-right: 2px;
-}
-.dateprevIII{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57534E;
-}
-.locationprevIII{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57534E;
-}
-.detailprevIII{
-    margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #C2410C;
-    size: 14px;
-    font-weight: bold;
-}
-.detailprev i {
-    color: #C2410C;
-}
-
-
-/* ///////////////////////////////////////////////////////////////////////////////////////// */
-
-
-.eventspreviewIIII{
-    width: 382px;
-    box-sizing: border-box;
-    border: solid #E7E5E4 3px;
-    border-radius: 13px;
-    box-shadow: 5px 10px 18px rgb(0,0,0,0.15);
-}
-.four-img{
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius:10px ;
-}
-.likebuttonIIII{
+.rencontre-color{
     background-color:#CCFBF1;
     color: #0F766E;
-    font-weight: lighter;
-    font-family:Arial, Helvetica, sans-serif;
-    border-radius: 13px;
-    width: fit-content;
-    margin-left: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    
-}
-.headfour{
-    display: inline-block;
-    width: 80%;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-    font-size: 21px;
-}
-i{
-    color: #57534E;
-    margin-left: 20px;
-    padding-right: 2px;
-}
-.dateprevIIII{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57534E;
-}
-.locationprevIIII{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57534E;
-}
-.detailprevIIII{
-    margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #C2410C;
-    size: 14px;
-    font-weight: bold;
-}
-.detailprev i {
-    color: #C2410C;
-}
-
-/* ///////////////////////////////////////////////////////////////////////////////////////// */
-
-
-.eventspreview5{
-    width: 382px;
-    box-sizing: border-box;
-    border: solid #E7E5E4 3px;
-    border-radius: 13px;
-    box-shadow: 5px 10px 18px rgb(0,0,0,0.15);
-}
-.fifth-img{
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius:10px ;
-}
-.likebutton5{
-    background-color:#FFEDD5;
-    color: #9A3412;
-    font-weight: lighter;
-    font-family:Arial, Helvetica, sans-serif;
-    border-radius: 13px;
-    width: fit-content;
-    margin-left: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    
-}
-.headfive{
-    display: inline-block;
-    width: 80%;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-    font-size: 21px;
-}
-i{
-    color: #57534E;
-    margin-left: 20px;
-    padding-right: 2px;
-}
-.dateprev5{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57534E;
-}
-.locationprev5{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57534E;
-}
-.detailprev5{
-    margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #C2410C;
-    size: 14px;
-    font-weight: bold;
-}
-.detailprev i {
-    margin-top: auto;
-    padding: 0px 20px 20px 20px;
-    color: #C2410C;
-}
-
-
-/* ///////////////////////////////////////////////////////////////////////////////////////// */
-
-
-.eventspreview6{
-    width: 382px;
-    box-sizing: border-box;
-    border: solid #E7E5E4 3px;
-    border-radius: 13px;
-    box-shadow: 5px 10px 18px rgb(0,0,0,0.15);
-}
-.sixth-img{
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius:10px ;
-}
-.likebutton6{
-    background-color:#CCFBF1;
-    color: #0F766E;
-    font-weight: lighter;
-    font-family:Arial, Helvetica, sans-serif;
-    border-radius: 13px;
-    width: fit-content;
-    margin-left: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    
-}
-.headsix{
-    display: inline-block;
-    width: 80%;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-    font-size: 21px;
-}
-i{
-    color: #57534E;
-    margin-left: 20px;
-    padding-right: 2px;
-}
-.dateprev6{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57534E;
-}
-.locationprev6{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57534E;
-}
-.detailprev6{
-    margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #C2410C;
-    size: 14px;
-    font-weight: bold;
-}
-.detailprev i {
-    margin-top: auto;
-    padding: 0px 20px 20px 20px;
-    color: #C2410C;
 }
 
 
 /* ////////////////////////////////FOOTER////////////////////////////////////////// */
-
+.footerback{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+}
 .container{
     display: flex;
     justify-content: space-around;
-    background-color: black;
-    width: 100%;
-    height: 300px;
-    padding: 60px;
-    
 }
 .container2{
     display: flex;
@@ -489,13 +196,49 @@ i{
     display: inline-block;
     color: white;
 }
+.child1 p{
+    font-family: Arial , sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+}
 
 .child2{
     display: inline-block;
     color: white;
 }
+.child2 h4{
+        font-family: Arial , sans-serif;
+        font-weight: 500;
+        font-size: 11px;
+
+}
 .child3{
     display: inline-block;
     color: white;
     margin-left: 25px;
+}
+.child3 h4{
+        font-family: Arial , sans-serif;
+        font-weight: 500;
+        font-size: 11px;
+
+}
+.lastpart{
+     padding-left: 110px;
+}
+.separator {
+    border: none;
+    height: 1px;
+    background-color: #57534E;
+    width: 80%;
+    margin: 20px 0;
+}
+.copyright{
+    position: relative;
+    top: 25px;
+    color: white;
+    margin-bottom: 10px;   
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff; 
+    size: 14px;
 }

@@ -6,28 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouCode Events</title>
     <link rel="stylesheet" href="\CSS\style.css">
+    <link rel="stylesheet" href="\CSS\responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 
 <body>
-    <header>
-        <nav>
-
-            <div class="youcodeLogo">
-                <img src="\assets\images\Logo.png" alt="Youcode Logo ">
-
+    <!---------------------------------------------- HEADER -------------------------------------------->
+    <header class="header">
+        <img class="photoyoucode" src="\assets\images\Logo.png" alt="Youcode Logo ">
+        <button class="hamburger">
+            ☰
+        </button>
+        <div class="youcodeLogo">
+            <nav class="navbar">
                 <div class="motNav">
-                    <li><a href="\index.html">Acceuil</a></li>
-                    <li><a href="\evenements.html" class="eventNav">Événements<span></span></a></li>
-                    <li><a href="\intervenants.html">Intervenants</a></li>
+                    <ul>
+                        <li><a href="\index.html">Acceuil</a></li>
+                        <li><a href="\evenements.html" class="eventNav">
+                                Événements
+                                <span></span></a></li>
+                        <li><a href="\intervenants.html">Intervenants</a></li>
 
-                    <button class="inscributton" href="\inscription.html">
-                        S'inscrire
-                    </button>
-
+                        <button class="inscributton" href="\inscription.html">
+                            S'inscrire
+                        </button>
+                    </ul>
                 </div>
-        </nav>
+            </nav>
     </header>
+
+    <!---------------------------------------------- TITRE ET ACCROCHE -------------------------------------------->
     <main>
         <section class="Titre-page">
             <h1>Événements</h1>
@@ -37,124 +45,126 @@
             </p>
 
         </section>
-
+        <!---------------------------------------------- LISTE DES EVENEMENTS -------------------------------------------->
 
         <section class="Liste-event">
             <h2 class="venirheading">À venir</h2>
             <p class="sixevents">6 événements</p>
 
             <div class="parent">
-                <div class="eventspreview">
-                    <img class="first-img" src="\assets\images\firstImage.png" alt="Image">
-                    <p class="likebutton">
+                <article class="event-card">
+                    <img class="card-image" src="\assets\images\firstImage.png" alt="Image">
+                    <p class="text-card atelier-color">
                         Atelier
                     </p>
-                    <h2 class="headone">Atelier Flexbox et CSS Grid</h2>
-                    <p class="dateprev">
+                    <h3 class="card-heading">Atelier Flexbox et CSS Grid</h3>
+                    <p class="card-date">
                         <i class="fa-solid fa-calendar-days"></i> 12 nov. 2026 &middot; 14h00
                     </p>
-                    <p class="locationprev">
+                    <p class="card-location">
                         <i class="fa-solid fa-location-dot"></i>Salle Turing, YouCode Safi
                     </p>
-                    <p class="detailprev">
+                    <p class="card-details">
                         Voir le détail<i class="fa-solid fa-arrow-right"></i>
                     </p>
-                </div>
+                </article>
 
 
 
 
-                <div class="eventspreviewII">
-                    <img class="sec-img" src="\assets\images\secondimage.png" alt="Image">
-                    <p class="likebuttonII">
+                <article class="event-card">
+                    <img class="card-image" src="\assets\images\secondimage.png" alt="Image">
+                    <p class="text-card conference-color">
                         Conférence
                     </p>
-                    <h2 class="headtwo">Accessibilité Web : par où<br> commencer ?</h2>
-                    <p class="dateprevII">
+                    <h2 class="card-heading">Accessibilité Web : par où<br> commencer ?</h2>
+                    <p class="card-date">
                         <i class="fa-solid fa-calendar-days"></i> 19 nov. 2026 &middot; 10h00
                     </p>
-                    <p class="locationprevII">
+                    <p class="card-location">
                         <i class="fa-solid fa-location-dot"></i>Amphithéâtre, YouCode Youssoufia
                     </p>
-                    <p class="detailprevII">
+                    <p class="card-details">
                         Voir le détail<i class="fa-solid fa-arrow-right"></i>
                     </p>
-                </div>
+                </article>
 
 
 
-                <div class="eventspreviewIII">
-                    <img class="third-img" src="\assets\images\thirdimage.png" alt="Image">
-                    <p class="likebuttonIII">
+                <article class="event-card">
+                    <img class="card-image" src="\assets\images\thirdimage.png" alt="Image">
+                    <p class="text-card hackathon-color">
                         Hackathon
                     </p>
-                    <h2 class="headthree">Hackathon Green Code</h2>
-                    <p class="dateprevIII">
+                    <h2 class="card-heading">Hackathon Green Code</h2>
+                    <p class="card-date">
                         <i class="fa-solid fa-calendar-days"></i> 28 et 29 nov. 2026
                     </p>
-                    <p class="locationprevIII">
+                    <p class="card-location">
                         <i class="fa-solid fa-location-dot"></i>Campus YouCode Safi
                     </p>
-                    <p class="detailprevIII">
+                    <p class="card-details">
                         Voir le détail<i class="fa-solid fa-arrow-right"></i>
                     </p>
-                </div>
+                </article>
 
 
 
-                <div class="eventspreviewIIII">
-                    <img class="four-img" src="\assets\images\fourimage.png" alt="Image">
-                    <p class="likebuttonIIII">
+                <article class="event-card">
+                    <img class="card-image" src="\assets\images\fourimage.png" alt="Image">
+                    <p class="text-card rencontre-color">
                         Rencontre
                     </p>
-                    <h2 class="headfour">Rencontre avec des développeurs front-end</h2>
-                    <p class="dateprevIIII">
+                    <h2 class="card-heading">Rencontre avec des développeurs front-end</h2>
+                    <p class="card-date">
                         <i class="fa-solid fa-calendar-days"></i> 3 déc. 2026 &middot; 16h00
                     </p>
-                    <p class="locationprevIIII">
+                    <p class="card-location">
                         <i class="fa-solid fa-location-dot"></i>Espace Lovelace, YouCode Nador
                     </p>
-                    <p class="detailprevIIII">
+                    <p class="card-details">
                         Voir le détail<i class="fa-solid fa-arrow-right"></i>
                     </p>
-                </div>
+                </article>
 
-                <div class="eventspreview5">
-                    <img class="fifth-img" src="\assets\images\fifthimage.png" alt="Image">
-                    <p class="likebutton5">
+                <article class="event-card">
+                    <img class="card-image" src="\assets\images\fifthimage.png" alt="Image">
+                    <p class="text-card atelier-color">
                         Atelier
                     </p>
-                    <h2 class="headfive">Atelier Git Flow en pratique</h2>
-                    <p class="dateprev5">
+                    <h2 class="card-heading">Atelier Git Flow en pratique</h2>
+                    <p class="card-date">
                         <i class="fa-solid fa-calendar-days"></i> 10 déc. 2026 &middot; 14h00
                     </p>
-                    <p class="locationprev5">
+                    <p class="card-location">
                         <i class="fa-solid fa-location-dot"></i>Salle Hopper, YouCode Safi
                     </p>
-                    <p class="detailprev5">
+                    <p class="card-details">
                         Voir le détail<i class="fa-solid fa-arrow-right"></i>
                     </p>
-                </div>
+                </article>
 
-                <div class="eventspreview6">
-                    <img class="sixth-img" src="\assets\images\sixthimage.png" alt="Image">
-                    <p class="likebutton6">
+                <article class="event-card">
+                    <img class="card-image" src="\assets\images\sixthimage.png" alt="Image">
+                    <p class="text-card conference-color">
                         Conférence
                     </p>
-                    <h2 class="headsix">Du design au code : travailler avec Figma</h2>
-                    <p class="dateprev6">
+                    <h2 class="card-heading">Du design au code : travailler avec Figma</h2>
+                    <p class="card-date">
                         <i class="fa-solid fa-calendar-days"></i> 17 déc. 2026 &middot; 10h00
                     </p>
-                    <p class="locationprev6">
+                    <p class="card-location">
                         <i class="fa-solid fa-location-dot"></i>Amphithéâtre, YouCode Youssoufia
                     </p>
-                    <p class="detailprev6">
+                    <p class="card-details">
                         Voir le détail<i class="fa-solid fa-arrow-right"></i>
                     </p>
-                </div>
+                </article>
             </div>
         </section>
-        <footer>
+        <!---------------------------------------------- FOOTER -------------------------------------------->
+
+        <footer class="footerback">
             <div class="container">
                 <div class="child1">
                     <h2 class="youcodefooter">YouCode Events</h2>
@@ -162,38 +172,44 @@
                         Les ateliers, conférences, hackathons et rencontres de YouCode, réunis au même endroit.
                     </p>
                 </div>
+
                 <div class="container2">
-                <div class="child2">
-                    <h2 class="headnav" >
-                        Navigation
-                    </h2>
-                    <h4 class="soushead">
-                        Acceuil
-                    </h4>
-                    <h4 class="soushead2">
-                        Événements
-                    </h4>
-                    <h4 class="soushead3">
-                        Intervenants et partenaires
-                    </h4>
-                    <h4 class="soushead4">
-                        Inscription
-                    </h4>
-                </div>
-                <div class="child3">
-                    <h2 class="contact" >
-                        Contact
-                    </h2>
-                    <h4 class="email">
-                        contact@youcode-events.example
-                    </h4>
-                    <h4 class="campusloca">
-                        Youssoufia &middot; Safi &middot; Nador
-                    </h4>
+                    <div class="child2">
+                        <h2 class="headnav">
+                            Navigation
+                        </h2>
+                        <h4 class="soushead">
+                            Acceuil
+                        </h4>
+                        <h4 class="soushead">
+                            Événements
+                        </h4>
+                        <h4 class="soushead">
+                            Intervenants et partenaires
+                        </h4>
+                        <h4 class="soushead">
+                            Inscription
+                        </h4>
+                    </div>
+                    <div class="child3">
+                        <h2 class="contact">
+                            Contact
+                        </h2>
+                        <h4 class="email">
+                            contact@youcode-events.example
+                        </h4>
+                        <h4 class="campusloca">
+                            Youssoufia &middot; Safi &middot; Nador
+                        </h4>
                     </div>
                 </div>
             </div>
-
+            <div class="lastpart">
+            <hr>
+            <p class="copyright">
+             © 2026 YouCode Events — site fictif réalisé en formation.
+            </p>
+            </div>
         </footer>
     </main>
 

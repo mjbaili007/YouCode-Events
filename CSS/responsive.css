@@ -1,0 +1,175 @@
+@media (max-width: 900px) {
+  .eventNav span {
+    display: none;
+  }
+
+  ul li a {
+    color: black;
+    padding: 5px 15px;
+    text-decoration: none;
+    margin-right: 5px;
+  }
+
+  .eventNav {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+
+  .photoyoucode {
+    padding-left: 40px;
+    object-fit: contain;
+  }
+
+  .parent {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+  }
+
+  .footerback {
+    padding: 30px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start
+  }
+
+  .child1 p {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .lastpart {
+    padding-left: 0;
+  }
+
+  .child3 {
+    color: white;
+    margin-left: 25px;
+  }
+
+  .child3 h4 {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    white-space: nowrap;
+
+  }
+  .child2 h4{
+        font-family: Arial , sans-serif;
+        font-weight: 500;
+        font-size: 11px;
+        white-space: nowrap;
+  }
+
+  .child1 p {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    white-space: wrap;
+  }
+
+}
+
+/*=====================================mobile=================================*/
+@media(max-width:600px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .body {
+    margin: 0;
+    width: 100%;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    border: none;
+    background-color: white;
+  }
+
+  .Titre-page {
+    padding: 35px;
+    background-color: #FFEDD5;
+  }
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0;
+  }
+
+  .descriptionevent {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0;
+    color: #57534E;
+
+  }
+
+  .venirheading {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0;
+    padding-left: 30px;
+  }
+
+  .sixevents {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0;
+    color: #57534E;
+    padding-left: 30px;
+
+  }
+
+  .parent {
+    padding: 0 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .photoyoucode {
+    justify-content: space-between;
+  }
+
+  .header {
+    padding: 10px 15px;
+  }
+
+  .child3 {
+    display: inline-block;
+    color: white;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    padding-left: 15px;
+
+  }
+
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .child3 {
+    margin: 0;
+  }
+.copyright{
+    position: relative;
+    top: 10px;
+    color: white;
+    margin-bottom: 10px;   
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff; 
+    font-size: 10px;
+  }
+}
